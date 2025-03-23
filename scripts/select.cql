@@ -1,0 +1,10 @@
+USE kina;
+SELECT * FROM sale_kinowe WHERE liczba_miejsc > 100 ALLOW FILTERING;
+SELECT * FROM seanse WHERE data_seansu > '2025-04-12' ALLOW FILTERING;
+SELECT COUNT(*) FROM bilety WHERE cena > 25.00 ALLOW FILTERING;
+SELECT * FROM pracownicy WHERE stanowisko = 'Kasjer' ALLOW FILTERING;
+UPDATE bilety SET cena = 40.00 WHERE bilet_ID = 2;
+SELECT imie, nazwisko FROM pracownicy WHERE stanowisko IN ('Kasjer', 'Sprzedawca') ALLOW FILTERING;
+SELECT AVG(cena) AS srednia_cena_biletu FROM bilety;
+SELECT * FROM kontrahenci WHERE adres = 'Warszawa, ul. Kino 1' ALLOW FILTERING;
+SELECT * FROM bilety WHERE cena > 20 ALLOW FILTERING;

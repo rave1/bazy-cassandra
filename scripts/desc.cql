@@ -1,0 +1,3 @@
+
+DESC KEYSPACE filmoteka;
+DESC KEYSPACE kina;
